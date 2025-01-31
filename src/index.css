@@ -1,2 +1,30 @@
 @import "tailwindcss";
 @plugin "daisyui";
+
+@theme {
+  --font-primary-font: "Sora", serif;
+  --font-secondary-font: "ADLaM Display", serif;
+  --color-primary-color: #ffdc26;
+  --color-secondary-color: #fff9f4;
+  --color-text-color: #111111;
+}
+:root {
+  @apply text-text-color;
+}
+
+.btn {
+  @apply font-normal;
+  @apply text-xl;
+  @apply px-8;
+}
+.menu {
+  @apply text-xl;
+}
+.menu a {
+  @apply active:text-black;
+  @apply active:bg-primary-color;
+}
+h1,
+h2 {
+  @apply font-secondary-font;
+}

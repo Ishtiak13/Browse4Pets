@@ -7,6 +7,7 @@
   --color-primary-color: #ffdc26;
   --color-secondary-color: #fff9f4;
   --color-text-color: #111111;
+  --color-card-bg: #f9df8a;
 }
 :root {
   @apply text-text-color;
@@ -16,6 +17,7 @@
   @apply font-normal;
   @apply text-xl;
   @apply px-8;
+  @apply rounded-lg;
 }
 .menu {
   @apply text-xl;
@@ -25,6 +27,16 @@
   @apply active:bg-primary-color;
 }
 h1,
-h2 {
+h2,
+h3 {
   @apply font-secondary-font;
+}
+h2 {
+  @apply text-4xl;
+}
+.card-body {
+  @apply p-4;
+}
+main section {
+  @apply mt-24;
 }

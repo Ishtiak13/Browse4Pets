@@ -51,6 +51,6 @@ main section {
   }
   100% {
     color: #b30000;
-    text-shadow: 1px 0 8px 0 #1c1c1c;
+    text-shadow: 0 0 10px 0 #1c1c1c;
   }
 }

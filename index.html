@@ -31,7 +31,7 @@
     <header>
       <!-- Navbar -->
       <nav class="bg-secondary-color">
-        <div class="navbar max-w-[1400px] mx-auto">
+        <div class="navbar max-w-[1400px] mx-auto p-4">
           <div class="navbar-start">
             <a
               href="/"
@@ -107,7 +107,7 @@
       </nav>
       <!-- Hero section -->
       <section
-        class="max-w-[1400px] mx-auto relative lg:my-24 bg-[url(/src/assets/Images/cat-big.png)] bg-contain bg-no-repeat bg-bottom lg:h-[749px] sm:h-[450px] h-[370px]"
+        class="max-w-[1400px] mx-auto relative lg:my-24 bg-[url(/src/assets/Images/cat-big.png)] bg-contain bg-no-repeat bg-bottom lg:h-[749px] sm:h-[450px] h-[370px] p-4"
       >
         <div class="space-y-3 md:space-y-6">
           <h1 class="text-3xl lg:text-6xl sm:max-w-2xl">
@@ -123,7 +123,7 @@
     </header>
     <main>
       <!-- Categories Section -->
-      <section class="max-w-[1400px] mx-auto space-y-8">
+      <section class="max-w-[1400px] mx-auto space-y-8 p-4">
         <h2>Browse By Categories</h2>
         <!-- Cards -->
         <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
@@ -191,7 +191,7 @@
       </section>
       <!-- Trending Section -->
       <section class="bg-secondary-color">
-        <div class="max-w-[1400px] mx-auto space-y-8 py-32">
+        <div class="max-w-[1400px] mx-auto space-y-8 py-32 p-4">
           <h2>Trending Pet Products</h2>
           <!-- trending cards -->
           <div class="flex flex-col lg:flex-row gap-6">
@@ -200,13 +200,12 @@
               class="bg-card-bg relative rounded-2xl px-8 py-12 space-y-6 lg:flex-1"
             >
               <h2>T-shirt For Dogs</h2>
-              <p>
-                Discover a world of treats, toys, and <br />
-                essentials handpicked for
+              <p class="w-[80%]">
+                Discover a world of treats, toys, and essentials handpicked for
               </p>
               <button class="btn border-none">Shop Now</button>
               <img
-                class="absolute bottom-0 right-10 h-6/11"
+                class="absolute bottom-0 right-1 md:right-10 h-6/11"
                 src="/src/assets/Images/cute-pet-mid.png"
                 alt=""
               />
@@ -320,6 +319,110 @@
           </div>
         </div>
       </section>
+      <!-- Offer section -->
+      <section class="max-w-[1400px] mx-auto space-y-10 pb-[30vh] p-4">
+        <h2>Everyday Low Price</h2>
+        <div class="flex flex-col lg:flex-row gap-6">
+          <div
+            class="lg:flex-2 flex flex-col md:flex-row bg-gradient-to-br from-[#F8CCFB] to-[#ACD2FD] md:items-center md:justify-center lg:justify-end rounded-2xl"
+          >
+            <div class="p-9">
+              <p class="text-xl hidden md:block">Under Price</p>
+              <h3 class="text-3xl">Pet Grooming Mitt</h3>
+              <h4 class="text-2xl hidden md:block text-white">
+                (Easy Hair Removal)
+              </h4>
+              <p
+                class="text-4xl md:text-6xl font-secondary-font text-white md:text-text-color"
+              >
+                $7.99
+              </p>
+            </div>
+            <img
+              class="relative md:static bottom-15 self-end md:self-center sm:max-w-full max-w-[217.55px]"
+              src="/src/assets/Images/cute-dog-mid.png"
+              alt=""
+            />
+          </div>
+          <div
+            class="lg:flex-1 pt-8 pl-8 lg:pl-12 lg:pt-14 rounded-2xl bg-gradient-to-br from-white to-[#F9DF8A] flex flex-col"
+          >
+            <h3 class="text-3xl">T-Shirt for Dogs</h3>
+            <p
+              class="text-4xl md:text-6xl font-secondary-font text-primary-color"
+            >
+              $7.99
+            </p>
+            <img
+              class="relative bottom-10 self-end md:self-center lg:self-end ] sm:max-w-full max-w-[217.55px]"
+              src="/src/assets/Images/cute-pet-mid.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </section>
+      <!-- subscribe section -->
+      <section class="relative flex justify-center items-center m-10">
+        <div
+          class="flex flex-col lg:flex-row w-full max-w-[1400px] px-20 py-9 items-center justify-evenly rounded-2xl bg-secondary-color absolute"
+        >
+          <div><img src="/src/assets/Images/cute-pet-mid.png" alt="" /></div>
+          <div class="space-y-6 text-center lg:text-start">
+            <h2>Get Pawsome News!</h2>
+            <p>Exclusive training tips, ticks, product deals and more.</p>
+            <form class="space-y-2">
+              <input
+                required
+                class="p-2.5 bg-white border-0 rounded-xl w-10/11 shadow focus:outline-0"
+                type="email"
+                placeholder="Enter email...."
+              />
+              <button class="btn bg-primary-color border-none">
+                Subscribe
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
     </main>
+    <!-- footer -->
+    <footer class="bg-[rgba(255,219,38,0.5)] p-4">
+      <div
+        class="footer sm:footer-horizontal text-base-contentpt pt-[40vh] pb-32 max-w-[1400px] mx-auto"
+      >
+        <div>
+          <a
+            href="/"
+            class="flex items-center gap-2 text-3xl"
+            aria-label="Browse4Pets Home"
+          >
+            <img
+              src="/src/assets/Images/logo-footer.png"
+              alt="Browse4Pets Logo"
+              class="h-10 w-auto"
+            />
+            <span class="cla">Browse4Pets</span>
+          </a>
+          <p class="footer-title">
+            Discover a world of treats, toys,<br />
+            and essentials handpicked for your furry friends
+          </p>
+        </div>
+        <nav class="text-base">
+          <a class="link link-hover">Find a Pet</a>
+          <a class="link link-hover">Breeds</a>
+          <a class="link link-hover">Contact Us</a>
+        </nav>
+        <nav class="self-end">
+          <h6 class="footer-title">Follow Us</h6>
+          <div class="grid grid-flow-col gap-4 text-2xl">
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-linkedin"></i></a>
+            <a href=""><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </nav>
+      </div>
+    </footer>
   </body>
 </html>

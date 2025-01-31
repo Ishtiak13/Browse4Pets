@@ -41,3 +41,16 @@ h2 {
 main section {
   @apply mt-24;
 }
+.anima {
+  animation: bgswap 2s alternate infinite; /* 10s delay before each loop */
+}
+
+@keyframes bgswap {
+  0% {
+    color: #1a1a1a;
+  }
+  100% {
+    color: #b30000;
+    text-shadow: 1px 0 8px 0 #1c1c1c;
+  }
+}

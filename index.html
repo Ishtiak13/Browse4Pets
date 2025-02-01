@@ -127,10 +127,12 @@
       <section class="max-w-[1400px] mx-auto space-y-8 p-4">
         <h2>Browse By Categories</h2>
         <!-- Cards -->
-        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
+        <div
+          class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 group cursor-pointer"
+        >
           <!-- Card 1 -->
           <div
-            class="text-center px-6 py-4 md:px-12 md:py-9 bg-card-bg rounded-2xl space-y-3"
+            class="text-center px-6 py-4 md:px-12 md:py-9 bg-card-bg rounded-2xl space-y-3 transition duration-300 group-hover:blur-[2px] group-hover:grayscale-50 hover:grayscale-0 hover:!blur-none hover:scale-110"
           >
             <div class="avatar bg-white rounded-full p-4">
               <img src="/src/assets/Images/dog-cartoon.png" />
@@ -140,7 +142,7 @@
           </div>
           <!-- Card 2 -->
           <div
-            class="text-center px-6 py-4 md:px-12 md:py-9 bg-card-bg rounded-2xl space-y-3"
+            class="text-center px-6 py-4 md:px-12 md:py-9 bg-card-bg rounded-2xl space-y-3 transition duration-300 group-hover:blur-[2px] group-hover:grayscale-50 hover:grayscale-0 hover:!blur-none hover:scale-110"
           >
             <div class="avatar bg-white rounded-full p-4">
               <img src="/src/assets/Images/fish-cartoon.png" />
@@ -150,7 +152,7 @@
           </div>
           <!-- Card 3 -->
           <div
-            class="text-center px-6 py-4 md:px-12 md:py-9 bg-card-bg rounded-2xl space-y-3"
+            class="text-center px-6 py-4 md:px-12 md:py-9 bg-card-bg rounded-2xl space-y-3 transition duration-300 group-hover:blur-[2px] group-hover:grayscale-50 hover:grayscale-0 hover:!blur-none hover:scale-110"
           >
             <div class="avatar bg-white rounded-full p-4">
               <img src="/src/assets/Images/cat-cartoon.png" />
@@ -160,7 +162,7 @@
           </div>
           <!-- Card 4 -->
           <div
-            class="text-center px-6 py-4 md:px-12 md:py-9 bg-card-bg rounded-2xl space-y-3"
+            class="text-center px-6 py-4 md:px-12 md:py-9 bg-card-bg rounded-2xl space-y-3 transition duration-300 group-hover:blur-[2px] group-hover:grayscale-50 hover:grayscale-0 hover:!blur-none hover:scale-110"
           >
             <div class="avatar bg-white rounded-full p-4">
               <img src="/src/assets/Images/bird-cartoon.png" />
@@ -170,7 +172,7 @@
           </div>
           <!-- Card 5 -->
           <div
-            class="text-center px-6 py-4 md:px-12 md:py-9 bg-card-bg rounded-2xl space-y-3"
+            class="text-center px-6 py-4 md:px-12 md:py-9 bg-card-bg rounded-2xl space-y-3 transition duration-300 group-hover:blur-[2px] group-hover:grayscale-50 hover:grayscale-0 hover:!blur-none hover:scale-110"
           >
             <div class="avatar bg-white rounded-full p-4">
               <img src="/src/assets/Images/mouse-cartoon.png" />
@@ -180,7 +182,7 @@
           </div>
           <!-- Card 6 -->
           <div
-            class="text-center px-6 py-4 md:px-12 md:py-9 bg-card-bg rounded-2xl space-y-3"
+            class="text-center px-6 py-4 md:px-12 md:py-9 bg-card-bg rounded-2xl space-y-3 transition duration-300 group-hover:blur-[2px] hover:!blur-none group-hover:grayscale-50 hover:grayscale-0 hover:scale-110"
           >
             <div class="avatar bg-white rounded-full p-4">
               <img src="/src/assets/Images/rabbit-cartoon.png" />
@@ -461,7 +463,8 @@
       </section>
       <!-- subscribe section -->
       <section
-        class="relative flex justify-center items-center md:py-30 lg:py-0 m-"
+        id="subs"
+        class="relative flex justify-center items-center md:py-30 lg:py-0 my-10 mx-6"
       >
         <div
           class="flex flex-col lg:flex-row w-full max-w-[1400px] px-6 py-3 lg:px-20 lg:py-9 items-center justify-evenly rounded-2xl bg-secondary-color absolute"
@@ -509,9 +512,21 @@
           </p>
         </div>
         <nav class="text-base">
-          <a class="link link-hover">Find a Pet</a>
-          <a class="link link-hover">Breeds</a>
-          <a class="link link-hover">Contact Us</a>
+          <a
+            href=""
+            class="relative before:h-7 before:w-0 before:absolute before:bg-secondary-color before:bottom-0 hover:before:w-full before:transition-all before:duration-300 before:-z-1 z-0"
+            >Find a Pet</a
+          >
+          <a
+            href=""
+            class="relative before:h-7 before:w-0 before:absolute before:bg-secondary-color before:bottom-0 hover:before:w-full before:transition-all before:duration-300 before:-z-1 z-0"
+            >Breeds</a
+          >
+          <a
+            href=""
+            class="relative before:h-7 before:w-0 before:absolute before:bg-secondary-color before:bottom-0 hover:before:w-full before:transition-all before:duration-300 before:-z-1 z-0"
+            >Contact Us</a
+          >
         </nav>
         <nav class="self-end">
           <h6 class="footer-title">Follow Us</h6>

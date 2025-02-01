@@ -51,6 +51,12 @@ main section {
   }
   100% {
     color: #b30000;
-    text-shadow: 0 0 10px 0 #1c1c1c;
+    text-shadow: 0 0 8px 0 #1c1c1c25;
+  }
+}
+@media screen and (max-width: 460px) {
+  #subs {
+    margin-top: 200px;
+    margin-bottom: 150px;
   }
 }
